@@ -1,0 +1,1 @@
+{"version":3,"sources":["js/main.js"],"names":["sayHello","console","log"],"mappings":"AAAA,IAAMA,QAAQ,GAAG,SAAXA,QAAW,GAAM;AACrBC,EAAAA,OAAO,CAACC,GAAR,CAAY,WAAZ;AACD,CAFD;;AAIAF,QAAQ","file":"main.fb6bbcaf.js","sourceRoot":"../src","sourcesContent":["const sayHello = () => {\n  console.log(\"HELOOO!!!\");\n};\n\nsayHello();\n"]}

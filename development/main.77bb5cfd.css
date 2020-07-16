@@ -89,6 +89,44 @@ nav {
   .about-intro {
     order: 2 !important; } }
 
+.services-area {
+  min-height: 100vh !important;
+  padding: 1rem 2rem 1rem 2rem !important; }
+
+.site-main .services-area .services-title {
+  padding: 0 14rem; }
+
+.site-main .services-area .services-title h1 {
+  font-size: 2rem !important;
+  padding: 1rem !important; }
+
+.site-main > .services-area .services {
+  background: rgba(248, 252, 253, 0.973);
+  padding: 2rem 0;
+  width: 16rem;
+  margin: 4rem 0.5rem 5rem 0.5rem;
+  transition: box-shadow 0.7s ease; }
+
+.site-main > .services-area .services:hover {
+  box-shadow: 0px 10px 30px rgba(118, 85, 225, 0.9); }
+
+.accord-bg {
+  background: rgba(248, 252, 253, 0.973) !important; }
+
+@media only screen and (max-width: 1200px) {
+  .services {
+    border: white 10px solid; } }
+
+@media only screen and (max-width: 992px) {
+  .services {
+    margin: 0.5rem !important; }
+  .services-title {
+    padding: 0.3rem !important; }
+  .accordion-section {
+    margin: 1.5rem 0 !important; }
+  .services {
+    margin: 0 auto !important; } }
+
 html {
   scroll-behavior: smooth !important; }
 

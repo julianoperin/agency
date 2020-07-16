@@ -1,10 +1,83 @@
-body {
-  background: #000;
+// ! ******* Variables *******
+$first-color: #38d39f;
+$second-color: #38a4d3;
+$title-color: #141313;
+$text-color: #36373a;
+$border-color: #1c1f32;
+$gradient-color: linear-gradient(90deg, #38d39f 0%, #38a4d3 100%);
+$shadow-color: 0px 10px 30px rgba(118, 85, 225, 0.3);
+
+//! NavBar
+nav {
+  min-height: 10vh;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: black;
+  margin-right: 2.5rem;
+
+  &:hover {
+    background: red;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+//! End NavBar
+
+//! ********** Button Contact Me *********
+.button {
+  padding: 0.8rem;
+  background-image: linear-gradient(90deg, #38d39f, #38a4d3, #38d39f);
+  border: 3px solid transparent;
+  border-radius: 4px;
+  display: block;
+  max-width: 53%;
+  margin: auto;
+}
+.button:hover {
+  background-position: right !important;
+}
+.primary-button:hover {
+  box-shadow: $shadow-color;
 }
 
-body h1 {
-  color: white;
-  padding: 5rem;
-  text-align: center;
-  font-size: 10rem;
+//! Hero
+.site-banner {
+  .row-hero {
+    min-height: 90vh;
+  }
+
+  .hero-img {
+    pointer-events: none;
+    width: 320px;
+  }
+
+  .wave {
+    display: none;
+    position: absolute !important;
+    top: 0%;
+    right: 0%;
+    z-index: -1;
+    height: 100%;
+    pointer-events: none;
+  }
+}
+//! End Hero
+
+@media only screen and (min-width: 768px) {
+  .wave {
+    display: block !important;
+  }
+
+  .hero-img {
+    width: 650px !important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .about-img {
+    // width: 450px !important;
+  }
 }

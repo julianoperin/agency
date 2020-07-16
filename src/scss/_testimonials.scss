@@ -1,0 +1,76 @@
+.about-area {
+  min-width: 100vh !important;
+}
+
+.test-title {
+  margin-top: 4rem !important;
+}
+
+.site-main .about-area .about-title p {
+  padding: 1rem 7rem;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.site-main .about-area .client {
+  background: #ffffff10 !important;
+  box-shadow: 0px 10px 30px rgba(118, 85, 225, 0.3);
+  margin: 3rem 0rem;
+}
+
+.site-main .about-area .client .client-img {
+  padding: 2rem;
+}
+.img-testimonials {
+  border-radius: 50%;
+}
+.site-main .about-area .client .about-client {
+  padding-top: 2rem;
+}
+
+.site-main .about-area .client .about-client h4 {
+  font: normal 500 21px/ 20px var(--roboto);
+}
+
+.site-main .about-area .client .about-client p {
+  font-size: 14px;
+}
+
+.site-main .about-area .owl-carousel .owl-item {
+  display: flex;
+  justify-content: center;
+  padding: 0 1.5rem;
+}
+
+.site-main .about-area .owl-carousel .owl-dots .owl-dot.active span {
+  background: #333;
+  width: 12px;
+  height: 12px;
+}
+
+//! Numbers
+
+.numbers .rect {
+  position: relative;
+  z-index: 1;
+  background: white;
+  width: 17rem;
+  height: 12rem;
+  padding-top: 3.5vmin;
+  margin: 1rem;
+  border-radius: 0.5em;
+  box-shadow: 0px 10px 30px rgba(118, 85, 225, 0.3);
+}
+
+.numbers {
+  //   margin-top: -15vmin;
+}
+
+.numbers .rect h1 {
+  font-size: 5rem;
+  color: tomato;
+}
+
+.numbers .rect > p {
+  font-family: var(--Patua);
+}

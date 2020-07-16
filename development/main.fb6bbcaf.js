@@ -136,20 +136,20 @@ $(document).ready(function () {
       enabled: true
     }
   }); // Owl-carousel
-  // $(".site-main .about-area .owl-carousel").owlCarousel({
-  //   loop: true,
-  //   autoplay: true,
-  //   dots: true,
-  //   responsive: {
-  //     0: {
-  //       items: 1,
-  //     },
-  //     560: {
-  //       items: 2,
-  //     },
-  //   },
-  // });
-  // sticky navigation menu
+
+  $(".site-main .about-area .owl-carousel").owlCarousel({
+    loop: true,
+    autoplay: true,
+    dots: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      560: {
+        items: 2
+      }
+    }
+  }); // sticky navigation menu
   // let nav_offset_top = $(".header_area").height() + 50;
   // function navbarFixed() {
   //   if ($(".header_area").length) {
@@ -164,6 +164,39 @@ $(document).ready(function () {
   //   }
   // }
   // navbarFixed();
+});
+
+var nCount = function nCount(selector) {
+  $(selector).each(function () {
+    $(this).animate({
+      Counter: $(this).text()
+    }, {
+      // A string or number determining how long the animation will run.
+      duration: 4000,
+      // A string indicating which easing function to use for the transition.
+      easing: "swing",
+
+      /**
+       * A function to be called for each animated property of each animated element.
+       * This function provides an opportunity to
+       *  modify the Tween object to change the value of the property before it is set.
+       */
+      step: function step(value) {
+        $(this).text(Math.ceil(value));
+      }
+    });
+  });
+};
+
+var a = 0;
+$(window).scroll(function () {
+  // The .offset() method allows us to retrieve the current position of an element  relative to the document
+  var oTop = $(".numbers").offset().top - window.innerHeight;
+
+  if (a == 0 && $(window).scrollTop() >= oTop) {
+    a++;
+    nCount(".rect > h1");
+  }
 });
 },{}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -193,7 +226,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63568" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50484" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -1,0 +1,104 @@
+.contact-area {
+  min-height: 80vh !important;
+  .contact-form-area {
+    max-width: 450px !important;
+    background: #fff;
+    -webkit-box-shadow: 0px 9px 45px rgba(0, 0, 0, 0.1);
+    box-shadow: linear-gradient(90deg, #38d39f 0%, #38a4d3 100%);
+    border-radius: 26px;
+    padding: 40px;
+    margin-top: 4rem !important;
+    display: block;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  .contact-form-area h1 {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 3rem;
+  }
+
+  .contact-form-area input[type="text"] {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #323657;
+    padding: 10px 5px;
+    color: #323657;
+  }
+
+  .contact-form-area input[type="email"] {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #323657;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #323657;
+    padding: 10px 5px;
+  }
+
+  .contact-form-area textarea {
+    // height: 130px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #323657;
+    color: #323657;
+    padding: 10px 5px;
+  }
+  .contact-form-area input:focus,
+  .contact-form-area textarea:focus {
+    outline: none;
+  }
+
+  //! Contact Form Button
+  .send-btn {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+
+  #formsend {
+    background: linear-gradient(90deg, #38d39f 0%, #38a4d3 100%);
+    color: #fff;
+    border: none;
+    padding: 12px 42px;
+    text-transform: capitalize;
+    font-weight: 700;
+    cursor: pointer;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    border-radius: 68px;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  #formsend:hover {
+    background: linear-gradient(#38d39f 0%, #38a4d3 100%);
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .contact-form-area {
+    // max-width: 350px !important;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .contact-form-area {
+    margin: 1rem !important;
+  }
+  .contact-form-area {
+    box-shadow: none !important;
+    margin: 0 0 0 0.3rem !important;
+    padding: 0.5rem !important;
+  }
+  .contact-form-area h1 {
+    font-size: 2.3rem !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+}

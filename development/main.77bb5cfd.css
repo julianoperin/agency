@@ -33,7 +33,7 @@ nav {
 
 .site-banner .hero-img {
   pointer-events: none;
-  width: 320px; }
+  width: 370px; }
 
 .site-banner .wave {
   display: none;
@@ -223,6 +223,167 @@ button:hover,
   .site-main .about-area .client .about-client p {
     padding: 0 1rem !important; } }
 
+.contact-area {
+  min-height: 80vh !important; }
+  .contact-area .contact-form-area {
+    max-width: 450px !important;
+    background: #fff;
+    -webkit-box-shadow: 0px 9px 45px rgba(0, 0, 0, 0.1);
+    box-shadow: linear-gradient(90deg, #38d39f 0%, #38a4d3 100%);
+    border-radius: 26px;
+    padding: 40px;
+    margin-top: 4rem !important;
+    display: block;
+    margin: auto;
+    position: relative;
+    z-index: 1; }
+  .contact-area .contact-form-area h1 {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 3rem; }
+  .contact-area .contact-form-area input[type="text"] {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #323657;
+    padding: 10px 5px;
+    color: #323657; }
+  .contact-area .contact-form-area input[type="email"] {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #323657;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #323657;
+    padding: 10px 5px; }
+  .contact-area .contact-form-area textarea {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #323657;
+    color: #323657;
+    padding: 10px 5px; }
+  .contact-area .contact-form-area input:focus,
+  .contact-area .contact-form-area textarea:focus {
+    outline: none; }
+  .contact-area .send-btn {
+    text-align: center;
+    margin-top: 1.5rem; }
+  .contact-area #formsend {
+    background: linear-gradient(90deg, #38d39f 0%, #38a4d3 100%);
+    color: #fff;
+    border: none;
+    padding: 12px 42px;
+    text-transform: capitalize;
+    font-weight: 700;
+    cursor: pointer;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    border-radius: 68px;
+    width: 100%;
+    margin-top: 1rem; }
+  .contact-area #formsend:hover {
+    background: linear-gradient(#38d39f 0%, #38a4d3 100%); }
+
+@media only screen and (max-width: 425px) {
+  .contact-form-area {
+    margin: 1rem !important; }
+  .contact-form-area {
+    box-shadow: none !important;
+    margin: 0 0 0 0.3rem !important;
+    padding: 0.5rem !important; }
+  .contact-form-area h1 {
+    font-size: 2.3rem !important; } }
+
+.main-footer {
+  position: relative;
+  width: 98vw;
+  min-height: 15vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+
+.first-part {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.first-part h2 {
+  font-size: 2rem;
+  text-align: center; }
+
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.btn-social {
+  display: inline-block;
+  width: 65px;
+  height: 65px;
+  background: #f1f1f1;
+  margin: 10px;
+  border-radius: 30%;
+  box-shadow: 0 5px 15px -5px #00000070;
+  color: #38a4d3;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  z-index: 4; }
+
+.btn-social i {
+  line-height: 65px;
+  font-size: 26px;
+  transition: 0.2s linear; }
+
+.btn-social:hover i {
+  transform: scale(1.3);
+  color: #f1f1f1; }
+
+.btn-social::before {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: linear-gradient(#38d39f, #38a4d3);
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%; }
+
+.btn-social:hover::before {
+  animation: slide 0.7s 1;
+  top: -10%;
+  left: -10%; }
+
+@keyframes slide {
+  0% {
+    left: -110%;
+    top: 90%; }
+  50% {
+    left: 10%;
+    top: -30%; }
+  100% {
+    top: -10%;
+    left: -10%; } }
+
+@media only screen and (max-width: 1200px) {
+  .first-part h2 {
+    font-size: 1.5rem; } }
+
+@media only screen and (max-width: 992px) {
+  .main-footer {
+    grid-template-columns: 1fr; }
+  .middle {
+    order: 1 !important;
+    margin: 1rem; }
+  .first-part {
+    order: 2 !important;
+    margin-bottom: 1rem !important; } }
+
+@media only screen and (max-width: 425px) {
+  .first-part h2 {
+    font-size: 1.1rem !important; } }
+
 html {
   scroll-behavior: smooth !important; }
 
@@ -294,7 +455,10 @@ body {
   transform: scale(1.2);
   color: white !important; }
 
-@media only screen and (max-width: 850px) {
+.navbar-toggler {
+  border: none !important; }
+
+@media only screen and (max-width: 563px) {
   .to-top {
     display: none !important; } }
 

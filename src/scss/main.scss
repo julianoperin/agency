@@ -3,6 +3,8 @@
 @import "services";
 @import "project";
 @import "testimonials";
+@import "contact";
+@import "footer";
 
 html {
   scroll-behavior: smooth !important;
@@ -95,7 +97,12 @@ $shadow-color: 0px 10px 30px rgba(118, 85, 225, 0.3);
   color: white !important;
 }
 
-@media only screen and (max-width: 850px) {
+//! No border on button
+.navbar-toggler {
+  border: none !important;
+}
+
+@media only screen and (max-width: 563px) {
   .to-top {
     display: none !important;
   }

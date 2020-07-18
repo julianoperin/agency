@@ -1,0 +1,75 @@
+@keyframes opening {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Music Animation */
+
+#music-one {
+  animation: music 1.5s ease infinite alternate;
+}
+
+#music-two {
+  animation: music 1.5s ease infinite alternate 0.5s;
+}
+
+#music-three {
+  animation: music 1.5s ease infinite alternate;
+}
+
+@keyframes music {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(3%);
+  }
+}
+/* Plant Animation */
+#plant-left {
+  animation: plant 1.5s ease infinite alternate;
+}
+
+#plant-right {
+  animation: plant 1.5s ease infinite alternate 0.5s;
+}
+
+@keyframes plant {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-13%);
+  }
+}
+/* Animation Guy */
+#me {
+  animation: me 1.2s ease infinite alternate;
+  transform-origin: bottom;
+}
+
+@keyframes me {
+  from {
+    transform: rotateZ(-5deg);
+  }
+  to {
+    transform: rotateZ(5deg);
+  }
+}
+/* Clock */
+#clock-arrow {
+  animation: clock 1.5s infinite linear;
+  transform-box: fill-box;
+  transform-origin: bottom;
+}
+@keyframes clock {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}

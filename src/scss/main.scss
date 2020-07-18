@@ -5,6 +5,7 @@
 @import "testimonials";
 @import "contact";
 @import "footer";
+@import "animation";
 
 html {
   scroll-behavior: smooth !important;
@@ -36,14 +37,14 @@ $shadow-color: 0px 10px 30px rgba(118, 85, 225, 0.3);
   margin: 0 auto !important;
 }
 
-@keyframes opening {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+// @keyframes opening {
+//   from {
+//     opacity: 0;
+//   }
+//   to {
+//     opacity: 1;
+//   }
+// }
 
 .navbar_fixed {
   position: fixed;

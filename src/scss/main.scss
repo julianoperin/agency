@@ -17,6 +17,7 @@ body {
   font-size: 1.3rem;
   overflow-x: hidden !important;
   animation: opening 1.5s ease-in-out forwards;
+  overflow-x: hidden;
 }
 
 // ! ******* Variables *******
@@ -49,7 +50,7 @@ $shadow-color: 0px 10px 30px rgba(118, 85, 225, 0.3);
   left: 0;
   right: 0;
   background: #fff;
-  opacity: 0.8;
+  opacity: 0.9;
   box-shadow: 0px 10px 30px rgba(118, 85, 225, 0.3);
   z-index: 999;
   transition: background 1s ease;
@@ -61,4 +62,41 @@ $shadow-color: 0px 10px 30px rgba(118, 85, 225, 0.3);
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+//!  Back to Top Btn
+.to-top {
+  background: linear-gradient(#38d39f, #38a4d3);
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: white;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.6s;
+}
+
+.to-top.active-scroll {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+  z-index: 4;
+}
+.to-top.active-scroll:hover {
+  transform: scale(1.2);
+  color: white !important;
+}
+
+@media only screen and (max-width: 850px) {
+  .to-top {
+    display: none !important;
+  }
 }

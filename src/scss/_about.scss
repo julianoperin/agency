@@ -1,5 +1,28 @@
+// ! ******* Variables *******
+$first-color: #38d39f;
+$second-color: #38a4d3;
+$title-color: #141313;
+$text-color: #36373a;
+$border-color: #1c1f32;
+$gradient-color: linear-gradient(90deg, #38d39f 0%, #38a4d3 100%);
+$shadow-color: 0px 10px 30px rgba(118, 85, 225, 0.3);
+$title-size: 1.4rem;
+$text-size: 1.1rem;
+
 .about-section {
   min-height: 100vh;
+  position: relative;
+  // &:after {
+  //   content: "";
+  //   position: absolute;
+  //   width: 400px;
+  //   height: 250px;
+  //   background: #f2f2f6;
+  //   right: 0;
+  //   bottom: 0;
+  //   opacity: 0.8;
+  //   z-index: -10;
+  // }
   .row-about {
     min-height: 100vh;
   }
@@ -12,7 +35,7 @@
     order: 1;
 
     h2 {
-      font-size: 1.5rem;
+      font-size: 1.5rem !important;
       text-transform: uppercase;
       letter-spacing: 0.8rem;
       font-weight: 800;
@@ -21,6 +44,8 @@
     p {
       line-height: 2.5rem;
       padding: 0 1rem;
+      font-size: $text-size;
+      font-weight: 300;
     }
   }
 }

@@ -2,10 +2,10 @@ nav {
   min-height: 10vh; }
 
 .navbar .navbar-nav .nav-item .nav-link {
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: 500;
   color: black;
-  margin-right: 2.5rem; }
+  margin-right: 1.5rem; }
   .navbar .navbar-nav .nav-item .nav-link:hover {
     background: red;
     -webkit-background-clip: text;
@@ -13,7 +13,7 @@ nav {
     background-clip: text; }
 
 .button {
-  font-size: 1.1rem;
+  font-size: 1rem !important;
   padding: 0.8rem;
   background-image: linear-gradient(90deg, #38d39f, #38a4d3, #38d39f);
   border: 3px solid transparent;
@@ -45,7 +45,7 @@ nav {
   pointer-events: none; }
 
 .site-banner .title-text {
-  font-size: 1.6rem; }
+  font-size: 1.5rem !important; }
 
 @media only screen and (min-width: 768px) {
   .wave {
@@ -58,7 +58,8 @@ nav {
     font-size: 1.8rem !important; } }
 
 .about-section {
-  min-height: 100vh; }
+  min-height: 100vh;
+  position: relative; }
   .about-section .row-about {
     min-height: 100vh; }
   .about-section .about-img {
@@ -68,13 +69,15 @@ nav {
   .about-section .about-intro {
     order: 1; }
     .about-section .about-intro h2 {
-      font-size: 1.5rem;
+      font-size: 1.5rem !important;
       text-transform: uppercase;
       letter-spacing: 0.8rem;
       font-weight: 800; }
     .about-section .about-intro p {
       line-height: 2.5rem;
-      padding: 0 1rem; }
+      padding: 0 1rem;
+      font-size: 1.1rem;
+      font-weight: 300; }
 
 @media only screen and (min-width: 768px) {
   .about-intro h2 {
@@ -171,10 +174,13 @@ button:hover,
     font-size: 14px !important; } }
 
 .test-title {
-  margin-top: 4rem !important; }
+  margin-top: 4rem !important;
+  font-size: 1.4rem;
+  font-weight: 600; }
 
 .site-main .about-area .about-title p {
-  padding: 1rem 6rem 0rem 6rem; }
+  padding: 1rem 6rem 0rem 6rem;
+  font-size: 1.1rem; }
 
 .site-main .about-area .client {
   background: #ffffff10 !important;
@@ -382,7 +388,9 @@ button:hover,
 
 @media only screen and (max-width: 425px) {
   .first-part h2 {
-    font-size: 1.1rem !important; } }
+    font-size: 1.1rem !important; }
+  .middle :nth-child(4) {
+    display: none; } }
 
 @keyframes opening {
   from {
@@ -450,9 +458,8 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Montserrat", sans-serif;
   background: #fff;
-  font-size: 1.3rem;
   overflow-x: hidden !important;
   animation: opening 1.5s ease-in-out forwards;
   overflow-x: hidden; }

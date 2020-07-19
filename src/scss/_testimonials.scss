@@ -1,9 +1,12 @@
 .test-title {
   margin-top: 4rem !important;
+  font-size: $title-size;
+  font-weight: 600;
 }
 
 .site-main .about-area .about-title p {
   padding: 1rem 6rem 0rem 6rem;
+  font-size: $text-size;
 }
 
 .site-main .about-area .client {

@@ -7,6 +7,21 @@
 @import "footer";
 @import "animation";
 
+// font-family: 'Montserrat', sans-serif;
+
+// h2 {
+//   font-size: 1.5rem !important;
+//   text-transform: uppercase;
+//   letter-spacing: 0.8rem;
+//   font-weight: 800;
+// }
+
+// p {
+//   line-height: 2.5rem;
+//   padding: 0 1rem;
+//   font-size: $text-size;
+//   font-weight: 300;
+
 html {
   scroll-behavior: smooth !important;
 }
@@ -15,9 +30,8 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Montserrat", sans-serif;
   background: #fff;
-  font-size: 1.3rem;
   overflow-x: hidden !important;
   animation: opening 1.5s ease-in-out forwards;
   overflow-x: hidden;
@@ -31,20 +45,13 @@ $text-color: #36373a;
 $border-color: #1c1f32;
 $gradient-color: linear-gradient(90deg, #38d39f 0%, #38a4d3 100%);
 $shadow-color: 0px 10px 30px rgba(118, 85, 225, 0.3);
+$title-size: 1.4rem; // 800
+$text-size: 1.1rem; // 300
 
 .contain {
   width: 86% !important;
   margin: 0 auto !important;
 }
-
-// @keyframes opening {
-//   from {
-//     opacity: 0;
-//   }
-//   to {
-//     opacity: 1;
-//   }
-// }
 
 .navbar_fixed {
   position: fixed;

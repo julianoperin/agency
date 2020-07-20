@@ -53,8 +53,8 @@ nav {
   }
 
   .hero-img {
-    pointer-events: none;
-    width: 370px;
+    margin: 0;
+    padding: 0;
   }
 
   .wave {
@@ -66,6 +66,11 @@ nav {
     height: 100%;
     pointer-events: none;
   }
+
+  .intro-text {
+    margin-top: 4rem;
+  }
+
   .title-text {
     margin: 0.5rem !important;
     padding: 0.3rem;
@@ -94,7 +99,7 @@ nav {
 }
 
 @media only screen and (min-width: 992px) {
-  .about-img {
-    // width: 450px !important;
+  .intro-text {
+    margin-top: 0 !important;
   }
 }

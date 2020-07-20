@@ -31,8 +31,8 @@ nav {
   min-height: 90vh; }
 
 .site-banner .hero-img {
-  pointer-events: none;
-  width: 370px; }
+  margin: 0;
+  padding: 0; }
 
 .site-banner .wave {
   display: none;
@@ -42,6 +42,9 @@ nav {
   z-index: -1;
   height: 100%;
   pointer-events: none; }
+
+.site-banner .intro-text {
+  margin-top: 4rem; }
 
 .site-banner .title-text {
   margin: 0.5rem !important;
@@ -59,6 +62,10 @@ nav {
     font-size: 1.3rem; }
   .title-text {
     font-size: 1.8rem !important; } }
+
+@media only screen and (min-width: 992px) {
+  .intro-text {
+    margin-top: 0 !important; } }
 
 .about-section {
   min-height: 100vh;
@@ -267,15 +274,19 @@ button:hover,
   width: 10px;
   height: 10px; }
 
+.client-img {
+  display: flex !important;
+  justify-content: center !important;
+  align-self: center !important; }
+
 @media only screen and (max-width: 1200px) {
   .site-main .about-area .client .about-client p,
   .site-main .about-area .client .about-client h4 {
     text-align: center; } }
 
-.client-img {
-  display: flex !important;
-  justify-content: center !important;
-  align-self: center !important; }
+@media only screen and (max-width: 576px) {
+  .site-main .about-area .about-title p {
+    padding: 0; } }
 
 .contact-area {
   min-height: 85vh !important; }
@@ -349,13 +360,11 @@ button:hover,
 
 @media only screen and (max-width: 425px) {
   .contact-form-area {
-    margin: 1rem !important; }
-  .contact-form-area {
     box-shadow: none !important;
     margin: 0 0 0 0.3rem !important;
     padding: 0.5rem !important; }
   .contact-form-area h1 {
-    font-size: 2.3rem !important; } }
+    font-size: 2rem !important; } }
 
 .main-footer {
   position: relative;
@@ -440,9 +449,11 @@ button:hover,
     order: 2 !important;
     margin-bottom: 1rem !important; } }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 768px) {
   .first-part h2 {
-    font-size: 1.1rem !important; }
+    font-size: 1rem; } }
+
+@media only screen and (max-width: 425px) {
   .middle :nth-child(4) {
     display: none; } }
 

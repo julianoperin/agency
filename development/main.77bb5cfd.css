@@ -3,9 +3,10 @@ nav {
 
 .navbar .navbar-nav .nav-item .nav-link {
   text-transform: capitalize;
-  font-weight: 500;
+  font-weight: 300;
+  font-size: 1.1rem;
   color: black;
-  margin-right: 1.5rem; }
+  margin-right: 1.4rem; }
   .navbar .navbar-nav .nav-item .nav-link:hover {
     background: red;
     -webkit-background-clip: text;
@@ -13,7 +14,8 @@ nav {
     background-clip: text; }
 
 .button {
-  font-size: 1rem !important;
+  font-size: 1.1rem !important;
+  font-weight: 800;
   padding: 0.8rem;
   background-image: linear-gradient(90deg, #38d39f, #38a4d3, #38d39f);
   border: 3px solid transparent;
@@ -21,9 +23,6 @@ nav {
   display: block;
   max-width: 53%;
   margin: auto; }
-
-.button:hover {
-  background-position: right !important; }
 
 .primary-button:hover {
   box-shadow: 0px 10px 30px rgba(118, 85, 225, 0.3); }
@@ -45,7 +44,11 @@ nav {
   pointer-events: none; }
 
 .site-banner .title-text {
-  font-size: 1.5rem !important; }
+  margin: 0.5rem !important;
+  padding: 0.3rem;
+  font-size: 1.4rem !important;
+  font-weight: 800;
+  letter-spacing: 0.15rem; }
 
 @media only screen and (min-width: 768px) {
   .wave {
@@ -69,12 +72,12 @@ nav {
   .about-section .about-intro {
     order: 1; }
     .about-section .about-intro h2 {
-      font-size: 1.5rem !important;
+      font-size: 1.4rem !important;
       text-transform: uppercase;
-      letter-spacing: 0.8rem;
+      letter-spacing: 0.15rem;
       font-weight: 800; }
     .about-section .about-intro p {
-      line-height: 2.5rem;
+      line-height: 2rem;
       padding: 0 1rem;
       font-size: 1.1rem;
       font-weight: 300; }
@@ -97,30 +100,58 @@ nav {
   padding: 1rem 2rem 1rem 2rem !important; }
 
 .site-main .services-area .services-title {
-  padding: 0 14rem; }
+  padding: 0 10rem; }
 
 .site-main .services-area .services-title h1 {
-  font-size: 2rem !important;
+  font-size: 1.4rem !important;
+  font-weight: 800;
+  letter-spacing: 0.15rem;
   padding: 1rem !important; }
 
+.site-main .services-area .services-title p {
+  font-size: 1.1rem;
+  font-weight: 300; }
+
 .site-main > .services-area .services {
-  background: rgba(248, 252, 253, 0.973);
+  background: rgba(248, 252, 253, 0.9);
   padding: 2rem 0;
   width: 16rem;
   margin: 4rem 0.5rem 5rem 0.5rem;
   transition: box-shadow 0.7s ease; }
 
 .site-main > .services-area .services:hover {
-  box-shadow: 0px 10px 30px rgba(118, 85, 225, 0.9); }
+  box-shadow: 0px 10px 30px rgba(56, 164, 211, 0.9); }
+
+.card-body h5 {
+  font-size: 1.2rem;
+  font-weight: 800; }
+
+.card-body p {
+  padding-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 300; }
 
 .accord-bg {
-  background: rgba(248, 252, 253, 0.973) !important; }
+  background: rgba(248, 252, 253, 0.9) !important;
+  font-size: 1rem;
+  font-weight: 300; }
+
+.accord-title {
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.02rem; }
 
 @media only screen and (max-width: 1200px) {
-  .services {
-    border: white 10px solid; } }
+  .site-main > .services-area .services {
+    padding: 0.8rem;
+    width: 13.8rem;
+    margin: 4rem 0.5rem 5rem 0.5rem !important; } }
 
 @media only screen and (max-width: 992px) {
+  .site-main > .services-area .services {
+    padding: 0.4rem;
+    width: 13.8rem;
+    margin: 1rem !important; }
   .services {
     margin: 0.5rem !important; }
   .services-title {
@@ -128,6 +159,13 @@ nav {
   .accordion-section {
     margin: 1.5rem 0 !important; }
   .services {
+    margin: 0 auto !important; } }
+
+@media only screen and (max-width: 768px) {
+  .site-main > .services-area .services {
+    padding: 0.1rem;
+    width: 15rem;
+    display: block !important;
     margin: 0 auto !important; } }
 
 .project-area {

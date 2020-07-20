@@ -6,6 +6,8 @@ $text-color: #36373a;
 $border-color: #1c1f32;
 $gradient-color: linear-gradient(90deg, #38d39f 0%, #38a4d3 100%);
 $shadow-color: 0px 10px 30px rgba(118, 85, 225, 0.3);
+$title-size: 1.4rem;
+$text-size: 1.1rem;
 
 //! NavBar
 nav {
@@ -13,9 +15,10 @@ nav {
 }
 .navbar .navbar-nav .nav-item .nav-link {
   text-transform: capitalize;
-  font-weight: 500;
+  font-weight: 300;
+  font-size: 1.1rem;
   color: black;
-  margin-right: 1.5rem;
+  margin-right: 1.4rem;
 
   &:hover {
     background: red;
@@ -28,7 +31,8 @@ nav {
 
 //! ********** Button Contact Me *********
 .button {
-  font-size: 1rem !important;
+  font-size: 1.1rem !important;
+  font-weight: 800;
   padding: 0.8rem;
   background-image: linear-gradient(90deg, #38d39f, #38a4d3, #38d39f);
   border: 3px solid transparent;
@@ -37,9 +41,7 @@ nav {
   max-width: 53%;
   margin: auto;
 }
-.button:hover {
-  background-position: right !important;
-}
+
 .primary-button:hover {
   box-shadow: $shadow-color;
 }
@@ -65,17 +67,13 @@ nav {
     pointer-events: none;
   }
   .title-text {
-    font-size: 1.5rem !important;
+    margin: 0.5rem !important;
+    padding: 0.3rem;
+    font-size: 1.4rem !important;
+    font-weight: 800;
+    letter-spacing: 0.15rem;
   }
 }
-
-// .color-text {
-//   font-weight: 800;
-//   background: linear-gradient(#38a4d3, #38d39f);
-//   -webkit-background-clip: text;
-//   -webkit-text-fill-color: transparent;
-//   background-clip: text;
-// }
 
 //! End Hero
 

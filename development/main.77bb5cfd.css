@@ -196,7 +196,9 @@ nav {
   padding-left: 1.5rem; }
 
 .site-main .project-area .grid .our-project > .title h4 {
-  font: normal 700 1.4rem/0.7rem "Cormorant Garamond"; }
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: 0.125rem; }
 
 .site-main .project-area .grid .our-project > .title span {
   font-size: 0.9rem; }
@@ -290,6 +292,8 @@ button:hover,
 
 .contact-area {
   min-height: 85vh !important; }
+  .contact-area .contact-img {
+    margin-top: 7rem; }
   .contact-area .contact-form-area {
     max-width: 400px !important;
     background: #fff;
@@ -297,7 +301,7 @@ button:hover,
     box-shadow: linear-gradient(90deg, #38d39f 0%, #38a4d3 100%);
     border-radius: 26px;
     padding: 40px;
-    margin-top: 4rem !important;
+    margin-top: 8rem !important;
     display: block;
     margin: auto;
     position: relative;
@@ -358,13 +362,15 @@ button:hover,
   .contact-area #formsend:hover {
     background: linear-gradient(#38d39f 0%, #38a4d3 100%); }
 
+@media only screen and (max-width: 992px) {
+  .contact-form-area {
+    margin-bottom: 4.5rem !important; } }
+
 @media only screen and (max-width: 425px) {
   .contact-form-area {
     box-shadow: none !important;
-    margin: 0 0 0 0.3rem !important;
-    padding: 0.5rem !important; }
-  .contact-form-area h1 {
-    font-size: 2rem !important; } }
+    margin: 0 1.5rem 1.5rem 1.5rem !important;
+    padding: 0.5rem !important; } }
 
 .main-footer {
   position: relative;
@@ -514,6 +520,31 @@ button:hover,
     transform: rotateZ(0deg); }
   to {
     transform: rotateZ(360deg); } }
+
+/* FLOR ANIMATION */
+#florone {
+  animation: plant 1.5s ease infinite alternate; }
+
+#flortwo {
+  animation: plant 1.5s ease infinite alternate 0.5s; }
+
+#florthree {
+  animation: plant 1.5s ease infinite alternate 0.3s; }
+
+#florfour {
+  animation: plant 1.5s ease infinite alternate 0.7s; }
+
+#florfive {
+  animation: plant 1.5s ease infinite alternate 0.1s; }
+
+#florsix {
+  animation: plant 1.5s ease infinite alternate 0.5s; }
+
+@keyframes plant {
+  from {
+    transform: translateY(0%); }
+  to {
+    transform: translateY(-10%); } }
 
 html {
   scroll-behavior: smooth !important; }

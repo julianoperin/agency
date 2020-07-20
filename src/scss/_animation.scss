@@ -73,3 +73,37 @@
     transform: rotateZ(360deg);
   }
 }
+
+/* FLOR ANIMATION */
+#florone {
+  animation: plant 1.5s ease infinite alternate;
+}
+
+#flortwo {
+  animation: plant 1.5s ease infinite alternate 0.5s;
+}
+
+#florthree {
+  animation: plant 1.5s ease infinite alternate 0.3s;
+}
+
+#florfour {
+  animation: plant 1.5s ease infinite alternate 0.7s;
+}
+
+#florfive {
+  animation: plant 1.5s ease infinite alternate 0.1s;
+}
+
+#florsix {
+  animation: plant 1.5s ease infinite alternate 0.5s;
+}
+
+@keyframes plant {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-10%);
+  }
+}

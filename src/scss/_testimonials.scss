@@ -1,17 +1,19 @@
 .test-title {
-  margin-top: 4rem !important;
-  font-size: $title-size;
-  font-weight: 600;
+  margin-top: 1.5rem !important;
+  font-size: 1.4rem;
+  font-weight: 800;
 }
 
 .site-main .about-area .about-title p {
-  padding: 1rem 6rem 0rem 6rem;
-  font-size: $text-size;
+  padding: 0 2rem;
+  margin: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 300;
 }
 
 .site-main .about-area .client {
   background: #ffffff10 !important;
-  box-shadow: 0px 10px 30px rgba(118, 85, 225, 0.3);
+  box-shadow: 0px 5px 15px rgba(56, 164, 211, 0.9);
   margin: 3rem 0rem;
 }
 
@@ -19,18 +21,25 @@
   padding: 2rem;
 }
 .img-testimonials {
-  border-radius: 50%;
+  width: 100px !important;
+  height: 100px !important;
+  border-radius: 50% !important;
 }
 .site-main .about-area .client .about-client {
-  padding-top: 2rem;
+  padding-top: 1.3rem;
 }
 
 .site-main .about-area .client .about-client h4 {
-  font: normal 500 21px/ 20px var(--roboto);
+  font-size: 1.2rem;
+  text-transform: capitalize !important;
+  font-family: cursive;
+  color: gray;
+  font-weight: 600;
 }
 
 .site-main .about-area .client .about-client p {
-  font-size: 14px;
+  font-size: 0.9rem;
+  font-weight: 200;
 }
 
 .site-main .about-area .owl-carousel .owl-item {
@@ -41,8 +50,8 @@
 
 .site-main .about-area .owl-carousel .owl-dots .owl-dot.active span {
   background: #333;
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -50,22 +59,10 @@
   .site-main .about-area .client .about-client h4 {
     text-align: center;
   }
-  .site-main .about-area .about-title p {
-    padding: 0.5rem 0;
-  }
 }
 
-@media only screen and (max-width: 768px) {
-  .test-title {
-    margin: 1rem 0.5rem !important;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .site-main .about-area .about-title p {
-    padding: 0 0.8rem !important;
-  }
-  .site-main .about-area .client .about-client p {
-    padding: 0 1rem !important;
-  }
+.client-img {
+  display: flex !important;
+  justify-content: center !important;
+  align-self: center !important;
 }

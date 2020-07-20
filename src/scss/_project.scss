@@ -3,26 +3,36 @@
 }
 
 .site-main .project-area {
-  padding: 4rem 0;
+  padding: 1rem 0;
+  margin: 1rem;
+}
+
+.site-main .project-area .title-project {
+  font-size: 1.4rem;
+  font-weight: 800;
 }
 
 .site-main .project-area .button-group button {
   background: transparent;
   border: none;
-  font: normal 500 16px/130px "Cormorant Garamond";
+  font: normal 500 16px/3.5rem "Cormorant Garamond";
   text-transform: uppercase;
 }
 
 .site-main .project-area .button-group button + button {
-  padding-left: 3rem;
+  padding-left: 1.5rem;
 }
 
 .site-main .project-area .grid .our-project > .title h4 {
-  font: normal 700 25px/12px "Cormorant Garamond";
+  font: normal 700 1.4rem/0.7rem "Cormorant Garamond";
+}
+
+.site-main .project-area .grid .our-project > .title span {
+  font-size: 0.9rem;
 }
 
 .site-main .project-area .grid .our-project .img a:hover img {
-  filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+  filter: brightness(1.15) drop-shadow(1px 8px 30px #b1afaf);
 }
 
 button:focus,

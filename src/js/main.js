@@ -65,3 +65,23 @@ window.addEventListener("scroll", () => {
     toTop.classList.remove("active-scroll");
   }
 });
+
+//! Overlay
+TweenMax.to(".overlay", 2, {
+  delay: 1.3,
+  top: "-100%",
+  ease: Expo.easeInOut,
+});
+
+TweenMax.to(".overlay span", 2, {
+  delay: -0.3,
+  opacity: 0,
+  y: -150,
+  ease: Expo.easeIn,
+});
+
+TweenMax.to(".overlay h1", 2, {
+  opacity: 0,
+  y: -150,
+  ease: Expo.easeIn,
+});

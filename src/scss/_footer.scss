@@ -11,7 +11,7 @@
   align-items: center;
 }
 .first-part h2 {
-  font-size: 2rem;
+  font-size: 1.3rem;
   text-align: center;
 }
 
@@ -77,15 +77,13 @@
 
 @media only screen and (max-width: 1200px) {
   .first-part h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 
 @media only screen and (max-width: 992px) {
   .main-footer {
     grid-template-columns: 1fr;
-  }
-  .first-part h2 {
   }
   .middle {
     order: 1 !important;
@@ -100,7 +98,7 @@
 
 @media only screen and (max-width: 768px) {
   .first-part h2 {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 

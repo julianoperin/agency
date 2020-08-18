@@ -85,3 +85,30 @@ TweenMax.to(".overlay h1", 2, {
   y: -150,
   ease: Expo.easeIn,
 });
+
+TweenMax.from(".intro-text", 1, {
+  delay: 2.3,
+  opacity: 0,
+  x: -250,
+  ease: Expo.easeInOut,
+});
+
+TweenMax.from(".hero-img", 1, {
+  delay: 2.3,
+  opacity: 0,
+  x: 250,
+  ease: Expo.easeInOut,
+});
+
+TweenMax.from(".wave", 1, {
+  delay: 2.2,
+  opacity: 0,
+  ease: Expo.easeInOut,
+});
+
+TweenMax.from(".navbar", 1, {
+  delay: 2.6,
+  opacity: 0,
+  y: -50,
+  ease: Expo.easeInOut,
+});

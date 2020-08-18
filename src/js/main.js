@@ -88,18 +88,20 @@ TweenMax.to(".overlay h1", 2, {
 
 //! End of Overlay
 
-TweenMax.from(".intro-text", 1, {
-  delay: 2.3,
-  opacity: 0,
-  x: -250,
-  ease: Expo.easeInOut,
-});
-
 TweenMax.from(".navbar", 1, {
   delay: 2.6,
   opacity: 0,
   y: -50,
   ease: Expo.easeInOut,
+});
+
+TweenMax.from(".line span", 1.5, {
+  delay: 2,
+  y: 80,
+  ease: Expo.easeInOut,
+  stagger: {
+    amount: 0.4,
+  },
 });
 
 TweenMax.to(".reveal-img", 1, {
@@ -112,5 +114,12 @@ const imgIntro = document.querySelector(".hero-img img");
 TweenMax.to(imgIntro, 1, {
   delay: 2.6,
   scale: 1,
+  ease: Expo.easeInOut,
+});
+
+TweenMax.from(".scrolldown", 1, {
+  delay: 3.4,
+  opacity: 0,
+  y: 100,
   ease: Expo.easeInOut,
 });

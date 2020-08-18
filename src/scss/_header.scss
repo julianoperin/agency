@@ -13,12 +13,18 @@ $text-size: 1.1rem;
 nav {
   min-height: 10vh;
 }
+
+.navbar-brand {
+  margin-left: 5rem;
+}
+
 .navbar .navbar-nav .nav-item .nav-link {
   text-transform: capitalize;
-  font-weight: 300;
-  font-size: 1.1rem;
+  font-weight: 500;
+  font-size: 1.2rem;
   color: black;
   margin-right: 1.4rem;
+  // font-family: "Nanum Myeongjo", serif;
 
   &:hover {
     background: red;
@@ -79,14 +85,44 @@ nav {
   .intro-text {
     margin-top: 4rem;
   }
-
-  .title-text {
-    margin: 0.5rem !important;
-    padding: 0.3rem;
-    font-size: 1.4rem !important;
-    font-weight: 800;
-    letter-spacing: 0.15rem;
+  .content-inner {
+    text-transform: uppercase;
   }
+
+  .content-inner h1 {
+    font-family: "Nanum Myeongjo", serif;
+    color: #292b31;
+    font-size: 4.4rem;
+    line-height: 7rem;
+    letter-spacing: 0.1rem;
+    text-align: left;
+    font-weight: 300;
+  }
+
+  .line {
+    overflow: hidden;
+    height: 100px;
+    position: relative;
+    span {
+      position: absolute;
+    }
+  }
+}
+
+.scrolldown {
+  transform: rotate(-90deg) !important;
+  position: relative;
+  left: -48%;
+  bottom: 5%;
+}
+
+.scrolldown::before {
+  display: inline-block;
+  content: "";
+  border-top: 1px solid #000;
+  width: 65px;
+  margin: 0 10px 0 0;
+  transform: translateY(-3px);
 }
 
 //! End Hero

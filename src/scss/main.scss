@@ -62,18 +62,20 @@ $text-size: 1.1rem; // 300
   margin: 0 auto !important;
 }
 
-.navbar_fixed {
-  position: fixed;
-  width: 100%;
-  top: -1px;
-  left: 0;
-  right: 0;
-  background: #fff;
-  opacity: 0.9;
-  box-shadow: 0px 10px 30px rgba(118, 85, 225, 0.3);
-  z-index: 999;
-  transition: background 1s ease;
-}
+// Might use in the future
+
+// .navbar_fixed {
+//   position: fixed;
+//   width: 100%;
+//   top: -1px;
+//   left: 0;
+//   right: 0;
+//   background: #fff;
+//   opacity: 0.9;
+//   box-shadow: 0px 10px 30px rgba(118, 85, 225, 0.3);
+//   z-index: 999;
+//   transition: background 1s ease;
+// }
 
 //! HELPERS
 .flex-helper {

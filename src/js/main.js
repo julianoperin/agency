@@ -86,6 +86,8 @@ TweenMax.to(".overlay h1", 2, {
   ease: Expo.easeIn,
 });
 
+//! End of Overlay
+
 TweenMax.from(".intro-text", 1, {
   delay: 2.3,
   opacity: 0,
@@ -93,22 +95,22 @@ TweenMax.from(".intro-text", 1, {
   ease: Expo.easeInOut,
 });
 
-TweenMax.from(".hero-img", 1, {
-  delay: 2.3,
-  opacity: 0,
-  x: 250,
-  ease: Expo.easeInOut,
-});
-
-TweenMax.from(".wave", 1, {
-  delay: 2.2,
-  opacity: 0,
-  ease: Expo.easeInOut,
-});
-
 TweenMax.from(".navbar", 1, {
   delay: 2.6,
   opacity: 0,
   y: -50,
+  ease: Expo.easeInOut,
+});
+
+TweenMax.to(".reveal-img", 1, {
+  delay: 2.6,
+  x: 700,
+  ease: Expo.easeInOut,
+});
+
+const imgIntro = document.querySelector(".hero-img img");
+TweenMax.to(imgIntro, 1, {
+  delay: 2.6,
+  scale: 1,
   ease: Expo.easeInOut,
 });

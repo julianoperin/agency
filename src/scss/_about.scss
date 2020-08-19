@@ -1,74 +1,59 @@
-// ! ******* Variables *******
-$first-color: #38d39f;
-$second-color: #38a4d3;
-$title-color: #141313;
-$text-color: #36373a;
-$border-color: #1c1f32;
-$gradient-color: linear-gradient(90deg, #38d39f 0%, #38a4d3 100%);
-$shadow-color: 0px 10px 30px rgba(118, 85, 225, 0.3);
-$title-size: 1.4rem;
-$text-size: 1.1rem;
-
+//! NEW
 .about-section {
   min-height: 100vh;
-  position: relative;
-  // &:after {
-  //   content: "";
-  //   position: absolute;
-  //   width: 50%;
-  //   height: 50%;
-  //   background: #f2f2f6;
-  //   right: 0;
-  //   bottom: 0;
-  //   opacity: 0.8;
-  //   z-index: -10;
-  // }
-  .row-about {
-    min-height: 100vh;
-  }
-  .about-img {
-    width: 320px;
-    order: 2;
-    pointer-events: none;
-  }
-  .about-intro {
-    order: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    h2 {
-      font-size: 1.4rem !important;
-      text-transform: uppercase;
-      letter-spacing: 0.15rem;
-      font-weight: 800;
-    }
+.about-section-new {
+  background: url(../img/intro-img.jpg) no-repeat left;
+  background-size: 55%;
+  overflow: hidden;
+  padding: 100px 0;
+}
 
-    p {
-      line-height: 2rem;
-      padding: 0 1rem;
-      font-size: $text-size;
-      font-weight: 300;
-    }
+.inner-container {
+  width: 55%;
+  float: right;
+  background-color: #fdfdfd;
+  padding: 120px;
+}
+
+.inner-container h1 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.text {
+  font-size: 1rem;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+  .inner-container {
+    padding: 80px;
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .about-intro {
-    h2 {
-      font-size: 2rem !important;
-    }
-
-    p {
-      padding: 0 !important;
-      margin: 0 !important;
-    }
+@media screen and (max-width: 1000px) {
+  .about-section-new {
+    background-size: 100%;
+    padding: 100px 40px;
+  }
+  .inner-container {
+    width: 100%;
   }
 }
 
-@media only screen and (min-width: 992px) {
-  .about-img {
-    order: 1 !important;
+@media screen and (max-width: 600px) {
+  .about-section-new {
+    padding: 0;
   }
-
-  .about-intro {
-    order: 2 !important;
+  .inner-container {
+    padding: 60px;
   }
 }

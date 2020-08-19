@@ -104,38 +104,49 @@ nav {
 
 .about-section {
   min-height: 100vh;
-  position: relative; }
-  .about-section .row-about {
-    min-height: 100vh; }
-  .about-section .about-img {
-    width: 320px;
-    order: 2;
-    pointer-events: none; }
-  .about-section .about-intro {
-    order: 1; }
-    .about-section .about-intro h2 {
-      font-size: 1.4rem !important;
-      text-transform: uppercase;
-      letter-spacing: 0.15rem;
-      font-weight: 800; }
-    .about-section .about-intro p {
-      line-height: 2rem;
-      padding: 0 1rem;
-      font-size: 1.1rem;
-      font-weight: 300; }
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
-@media only screen and (min-width: 768px) {
-  .about-intro h2 {
-    font-size: 2rem !important; }
-  .about-intro p {
-    padding: 0 !important;
-    margin: 0 !important; } }
+.about-section-new {
+  background: url(/intro-img.c094b01f.jpg) no-repeat left;
+  background-size: 55%;
+  overflow: hidden;
+  padding: 100px 0; }
 
-@media only screen and (min-width: 992px) {
-  .about-img {
-    order: 1 !important; }
-  .about-intro {
-    order: 2 !important; } }
+.inner-container {
+  width: 55%;
+  float: right;
+  background-color: #fdfdfd;
+  padding: 120px; }
+
+.inner-container h1 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 900; }
+
+.text {
+  font-size: 1rem;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 40px; }
+
+@media screen and (max-width: 1200px) {
+  .inner-container {
+    padding: 80px; } }
+
+@media screen and (max-width: 1000px) {
+  .about-section-new {
+    background-size: 100%;
+    padding: 100px 40px; }
+  .inner-container {
+    width: 100%; } }
+
+@media screen and (max-width: 600px) {
+  .about-section-new {
+    padding: 0; }
+  .inner-container {
+    padding: 60px; } }
 
 .services-area {
   min-height: 100vh !important;
@@ -331,15 +342,14 @@ button:hover,
 .contact-area {
   min-height: 85vh !important; }
   .contact-area .contact-img {
-    margin-top: 7rem; }
+    margin-top: 7rem;
+    height: 600px; }
   .contact-area .contact-form-area {
-    max-width: 400px !important;
+    max-width: 500px !important;
+    height: 600px;
     background: #fff;
-    -webkit-box-shadow: 0px 9px 45px rgba(0, 0, 0, 0.1);
-    box-shadow: linear-gradient(90deg, #38d39f 0%, #38a4d3 100%);
-    border-radius: 26px;
     padding: 40px;
-    margin-top: 8rem !important;
+    margin-top: 5.5rem !important;
     display: block;
     margin: auto;
     position: relative;
@@ -347,32 +357,32 @@ button:hover,
   .contact-area .contact-form-area h1 {
     text-align: center;
     padding-bottom: 2rem;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     font-weight: 800; }
   .contact-area .contact-form-area input[type="text"] {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 300;
     width: 100%;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #323657;
-    padding: 10px 5px;
+    padding: 15px 5px;
     color: #323657; }
   .contact-area .contact-form-area input[type="email"] {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 300;
     width: 100%;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #323657;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     color: #323657;
-    padding: 10px 5px; }
+    padding: 15px 5px; }
   .contact-area .contact-form-area textarea {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 300;
-    height: 130px;
+    height: 200px;
     width: 100%;
     background-color: transparent;
     border: none;
@@ -383,22 +393,19 @@ button:hover,
     outline: none; }
   .contact-area .send-btn {
     text-align: center;
-    margin-top: 1.5rem; }
+    margin-top: 2.5rem;
+    font-size: 1.1rem; }
   .contact-area #formsend {
-    background: linear-gradient(90deg, #38d39f 0%, #38a4d3 100%);
+    background: #222;
     color: #fff;
     border: none;
     padding: 12px 42px;
     text-transform: capitalize;
     font-weight: 700;
     cursor: pointer;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    border-radius: 68px;
-    width: 100%;
-    margin-top: 1rem; }
+    width: 100%; }
   .contact-area #formsend:hover {
-    background: linear-gradient(#38d39f 0%, #38a4d3 100%); }
+    transform: translateY(-2px); }
 
 @media only screen and (max-width: 992px) {
   .contact-form-area {
@@ -507,83 +514,6 @@ button:hover,
   to {
     opacity: 1; } }
 
-/* Music Animation */
-#music-one {
-  animation: music 1.5s ease infinite alternate; }
-
-#music-two {
-  animation: music 1.5s ease infinite alternate 0.5s; }
-
-#music-three {
-  animation: music 1.5s ease infinite alternate; }
-
-@keyframes music {
-  from {
-    transform: translateY(0%); }
-  to {
-    transform: translateY(3%); } }
-
-/* Plant Animation */
-#plant-left {
-  animation: plant 1.5s ease infinite alternate; }
-
-#plant-right {
-  animation: plant 1.5s ease infinite alternate 0.5s; }
-
-@keyframes plant {
-  from {
-    transform: translateY(0%); }
-  to {
-    transform: translateY(-13%); } }
-
-/* Animation Guy */
-#me {
-  animation: me 1.2s ease infinite alternate;
-  transform-origin: bottom; }
-
-@keyframes me {
-  from {
-    transform: rotateZ(-5deg); }
-  to {
-    transform: rotateZ(5deg); } }
-
-/* Clock */
-#clock-arrow {
-  animation: clock 1.5s infinite linear;
-  transform-box: fill-box;
-  transform-origin: bottom; }
-
-@keyframes clock {
-  from {
-    transform: rotateZ(0deg); }
-  to {
-    transform: rotateZ(360deg); } }
-
-/* FLOR ANIMATION */
-#florone {
-  animation: plant 1.5s ease infinite alternate; }
-
-#flortwo {
-  animation: plant 1.5s ease infinite alternate 0.5s; }
-
-#florthree {
-  animation: plant 1.5s ease infinite alternate 0.3s; }
-
-#florfour {
-  animation: plant 1.5s ease infinite alternate 0.7s; }
-
-#florfive {
-  animation: plant 1.5s ease infinite alternate 0.1s; }
-
-#florsix {
-  animation: plant 1.5s ease infinite alternate 0.5s; }
-
-@keyframes plant {
-  from {
-    transform: translateY(0%); }
-  to {
-    transform: translateY(-10%); } }
-
 .overlay {
   position: absolute;
   width: 100%;
@@ -631,7 +561,7 @@ body {
   flex-direction: column; }
 
 .to-top {
-  background: linear-gradient(#38d39f, #38a4d3);
+  background: #222;
   position: fixed;
   bottom: 16px;
   right: 32px;
@@ -641,12 +571,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 28px;
+  font-size: 1.5rem;
   color: white;
   text-decoration: none;
   opacity: 0;
-  pointer-events: none;
-  transition: all 0.6s; }
+  pointer-events: none; }
 
 .to-top.active-scroll {
   bottom: 32px;
@@ -655,8 +584,8 @@ body {
   z-index: 4; }
 
 .to-top.active-scroll:hover {
-  transform: scale(1.2);
-  color: white !important; }
+  transform: translateY(-1px);
+  color: #fff !important; }
 
 .navbar-toggler {
   border: none !important; }

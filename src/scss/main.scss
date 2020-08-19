@@ -5,7 +5,16 @@
 @import "testimonials";
 @import "contact";
 @import "footer";
-@import "animation";
+
+//! ANIMAITON
+@keyframes opening {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 //! OVERLAY
 .overlay {
@@ -64,21 +73,6 @@ $text-size: 1.1rem; // 300
   margin: 0 auto !important;
 }
 
-// Might use in the future
-
-// .navbar_fixed {
-//   position: fixed;
-//   width: 100%;
-//   top: -1px;
-//   left: 0;
-//   right: 0;
-//   background: #fff;
-//   opacity: 0.9;
-//   box-shadow: 0px 10px 30px rgba(118, 85, 225, 0.3);
-//   z-index: 999;
-//   transition: background 1s ease;
-// }
-
 //! HELPERS
 .flex-helper {
   display: flex;
@@ -89,7 +83,7 @@ $text-size: 1.1rem; // 300
 
 //!  Back to Top Btn
 .to-top {
-  background: linear-gradient(#38d39f, #38a4d3);
+  background: #222;
   position: fixed;
   bottom: 16px;
   right: 32px;
@@ -99,12 +93,11 @@ $text-size: 1.1rem; // 300
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 28px;
+  font-size: 1.5rem;
   color: white;
   text-decoration: none;
   opacity: 0;
   pointer-events: none;
-  transition: all 0.6s;
 }
 
 .to-top.active-scroll {
@@ -114,8 +107,8 @@ $text-size: 1.1rem; // 300
   z-index: 4;
 }
 .to-top.active-scroll:hover {
-  transform: scale(1.2);
-  color: white !important;
+  transform: translateY(-1px);
+  color: #fff !important;
 }
 
 //! No border on button

@@ -44,11 +44,7 @@ button:hover,
 .btn:active,
 .btn.active {
   outline: 0px !important;
-  box-shadow: none !important;
-  background: #c4c4c4 !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  background-clip: text !important;
+  color: #b1afaf !important;
   transition: 0.3s ease-in;
 }
 

@@ -1,3 +1,4 @@
+//! Filter Projects
 $(document).ready(function () {
   let $btns = $(".project-area .button-group button");
 
@@ -46,7 +47,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// Overlay
+//! Overlay
 TweenMax.to(".overlay", 2, {
   delay: 1.3,
   top: "-100%",
@@ -65,9 +66,8 @@ TweenMax.to(".overlay h1", 2, {
   y: -150,
   ease: Expo.easeIn,
 });
-// End of Overlay
 
-// Header
+//! Home Page
 TweenMax.from(".navbar", 1, {
   delay: 2.6,
   opacity: 0,

@@ -4,7 +4,7 @@ nav {
 }
 
 .navbar-brand {
-  margin-left: 5rem;
+  margin-left: 1.5rem;
 }
 
 .navbar .navbar-nav .nav-item .nav-link {
@@ -127,6 +127,10 @@ nav {
   .intro-text {
     margin-top: 1.5rem !important;
   }
+
+  .navbar-brand {
+    margin-left: 4rem !important;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -159,6 +163,10 @@ nav {
       height: 125px !important;
     }
   }
+
+  .navbar-brand {
+    margin-left: 5rem !important;
+  }
 }
 
 @media only screen and (min-width: 1600px) {
@@ -171,5 +179,8 @@ nav {
   }
   .intro-text {
     margin-top: 2.5rem !important;
+  }
+  .navbar-brand {
+    margin-left: 7rem !important;
   }
 }

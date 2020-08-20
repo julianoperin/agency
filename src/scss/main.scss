@@ -16,7 +16,7 @@
   }
 }
 
-//! OVERLAY
+//! Overlay
 .overlay {
   position: absolute;
   width: 100%;
@@ -43,6 +43,8 @@
   letter-spacing: 0.2rem;
 }
 
+//! End of Overlay
+
 html {
   scroll-behavior: smooth !important;
 }
@@ -57,23 +59,24 @@ body {
   overflow-x: hidden;
 }
 
-// ! ******* Variables *******
-$first-color: #38d39f;
-$second-color: #38a4d3;
-$title-color: #141313;
-$text-color: #36373a;
-$border-color: #1c1f32;
-$gradient-color: linear-gradient(90deg, #38d39f 0%, #38a4d3 100%);
-$shadow-color: 0px 10px 30px rgba(118, 85, 225, 0.3);
-$title-size: 1.4rem; // 800
-$text-size: 1.1rem; // 300
+// // ! ******* Variables *******
+// $first-color: #38d39f;
+// $second-color: #38a4d3;
+// $title-color: #141313;
+// $text-color: #36373a;
+// $border-color: #1c1f32;
+// $gradient-color: linear-gradient(90deg, #38d39f 0%, #38a4d3 100%);
+// $shadow-color: 0px 10px 30px rgba(118, 85, 225, 0.3);
+// $title-size: 1.4rem; // 800
+// $text-size: 1.1rem; // 300
 
+//! Contain
 .contain {
   width: 86% !important;
   margin: 0 auto !important;
 }
 
-//! HELPERS
+//! Helpers
 .flex-helper {
   display: flex;
   justify-content: center;
@@ -111,7 +114,7 @@ $text-size: 1.1rem; // 300
   color: #fff !important;
 }
 
-//! No border on button
+//! No border on menu button
 .navbar-toggler {
   border: none !important;
 }
@@ -122,6 +125,7 @@ $text-size: 1.1rem; // 300
   }
 }
 
+//! Bottom Lines
 .bottom-about {
   height: 3px;
   width: 6rem;

@@ -2,7 +2,7 @@ nav {
   min-height: 10vh; }
 
 .navbar-brand {
-  margin-left: 5rem; }
+  margin-left: 1.5rem; }
 
 .navbar .navbar-nav .nav-item .nav-link {
   text-transform: capitalize;
@@ -96,7 +96,9 @@ nav {
     .content-inner h1 .line {
       height: 85px; }
   .intro-text {
-    margin-top: 1.5rem !important; } }
+    margin-top: 1.5rem !important; }
+  .navbar-brand {
+    margin-left: 4rem !important; } }
 
 @media only screen and (min-width: 992px) {
   .content-inner h1 {
@@ -119,7 +121,9 @@ nav {
     font-size: 4.3rem !important;
     letter-spacing: 0.1rem; }
     .content-inner h1 .line {
-      height: 125px !important; } }
+      height: 125px !important; }
+  .navbar-brand {
+    margin-left: 5rem !important; } }
 
 @media only screen and (min-width: 1600px) {
   .content-inner h1 {
@@ -128,7 +132,9 @@ nav {
     .content-inner h1 .line {
       height: 130px !important; }
   .intro-text {
-    margin-top: 2.5rem !important; } }
+    margin-top: 2.5rem !important; }
+  .navbar-brand {
+    margin-left: 7rem !important; } }
 
 .about-section {
   min-height: 100vh;
@@ -269,7 +275,7 @@ nav {
 .site-main .project-area .button-group button {
   background: transparent;
   border: none;
-  font: normal 500 16px/3.5rem "Cormorant Garamond";
+  font: normal 500 20px/3.5rem "Cormorant Garamond";
   text-transform: uppercase; }
 
 .site-main .project-area .button-group button + button {
@@ -293,7 +299,7 @@ button:hover,
 .btn.active {
   outline: 0px !important;
   box-shadow: none !important;
-  background: linear-gradient(#38a4d3, #38d39f) !important;
+  background: #c0c0c0 !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   background-clip: text !important;
@@ -301,12 +307,17 @@ button:hover,
 
 @media only screen and (max-width: 768px) {
   .button-group button {
-    padding: 0 5px !important; } }
+    padding: 0 5px !important; }
+  .site-main .project-area .button-group button {
+    font: normal 500 15px/3.5rem "Cormorant Garamond"; } }
 
 @media only screen and (max-width: 445px) {
   .button-group button {
     padding: 0 2px !important;
-    font-size: 14px !important; } }
+    font-size: 14px !important; }
+  .site-main .project-area .button-group button {
+    font: normal 300 13px/2.5rem "Cormorant Garamond" !important;
+    padding: 0 0 5px 0 !important; } }
 
 .test-title {
   margin-top: 1.5rem !important;

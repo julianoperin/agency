@@ -16,7 +16,7 @@
 .site-main .project-area .button-group button {
   background: transparent;
   border: none;
-  font: normal 500 16px/3.5rem "Cormorant Garamond";
+  font: normal 500 20px/3.5rem "Cormorant Garamond";
   text-transform: uppercase;
 }
 
@@ -45,7 +45,7 @@ button:hover,
 .btn.active {
   outline: 0px !important;
   box-shadow: none !important;
-  background: linear-gradient(#38a4d3, #38d39f) !important;
+  background: #c0c0c0 !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   background-clip: text !important;
@@ -58,11 +58,19 @@ button:hover,
   .button-group button {
     padding: 0 5px !important;
   }
+  .site-main .project-area .button-group button {
+    font: normal 500 15px/3.5rem "Cormorant Garamond";
+  }
 }
 
 @media only screen and (max-width: 445px) {
   .button-group button {
     padding: 0 2px !important;
     font-size: 14px !important;
+  }
+
+  .site-main .project-area .button-group button {
+    font: normal 300 13px/2.5rem "Cormorant Garamond" !important;
+    padding: 0 0 5px 0 !important;
   }
 }

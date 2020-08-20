@@ -173,9 +173,9 @@ nav {
   transition: box-shadow 0.7s ease; }
 
 .site-main > .services-area .services:hover {
-  box-shadow: 0px 10px 30px rgba(56, 164, 211, 0.9); }
+  box-shadow: 0px 10px 30px #00000070; }
 
-.card-body {
+.four-cards {
   min-height: 280px; }
 
 .card-body h5 {
@@ -290,7 +290,7 @@ button:hover,
 
 .site-main .about-area .client {
   background: #ffffff10 !important;
-  box-shadow: 0px 5px 15px rgba(56, 164, 211, 0.9);
+  box-shadow: 0px 5px 15px #00000070;
   margin: 3rem 0rem; }
 
 .site-main .about-area .client .client-img {
@@ -445,7 +445,7 @@ button:hover,
   margin: 10px;
   border-radius: 30%;
   box-shadow: 0 5px 15px -5px #00000070;
-  color: #38a4d3;
+  color: #222;
   overflow: hidden;
   position: relative;
   text-align: center;
@@ -465,7 +465,7 @@ button:hover,
   position: absolute;
   width: 120%;
   height: 120%;
-  background: linear-gradient(#38d39f, #38a4d3);
+  background: #222;
   transform: rotate(45deg);
   left: -110%;
   top: 90%; }

@@ -186,8 +186,8 @@ TweenMax.from(".navbar", 1, {
   ease: Expo.easeInOut
 });
 TweenMax.from(".line span", 1.5, {
-  delay: 2,
-  y: 80,
+  delay: 2.5,
+  y: 150,
   ease: Expo.easeInOut,
   stagger: {
     amount: 0.4
@@ -209,7 +209,7 @@ TweenMax.from(".scrolldown", 1, {
   opacity: 0,
   y: 100,
   ease: Expo.easeInOut
-}); // End of Header
+});
 },{}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -238,7 +238,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63811" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53690" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

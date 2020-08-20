@@ -8,10 +8,10 @@
 }
 
 .site-main .services-area .services-title h1 {
-  font-size: 1.4rem !important;
+  font-size: 1.6rem !important;
   font-weight: 800;
   letter-spacing: 0.15rem;
-  padding: 1rem !important;
+  padding: 1rem 1rem 0.5rem 1rem !important;
 }
 .site-main .services-area .services-title p {
   font-size: 1.1rem;
@@ -55,6 +55,8 @@
   font-weight: 600 !important;
   letter-spacing: 0.02rem;
 }
+
+//! Media Queries
 
 @media only screen and (max-width: 1200px) {
   .site-main > .services-area .services {

@@ -49,7 +49,7 @@
 
     <!--! SASS  -->
     <link rel="stylesheet" href="./scss/main.scss" />
-    <title>Modern Home</title>
+    <title>Moderna</title>
   </head>
   <body>
     <!--! Overlay  -->
@@ -117,14 +117,18 @@
                   <div class="line">
                     <span>Allow</span>
                   </div>
-                  <div class="line yellow">
+                  <div class="line">
                     <span>Yourself</span>
                   </div>
                   <div class="line">
                     <span>To Live</span>
                   </div>
-                  <div class="line yellow">
-                    <span>Comfortably</span>
+                  <div class="line">
+                    <span
+                      class="txt-type"
+                      data-wait="3000"
+                      data-words='["Comfortably...", "Well...", "cozily..."]'
+                    ></span>
                   </div>
                 </h1>
               </div>
@@ -142,7 +146,8 @@
       <section class="about-section" id="about">
         <div class="about-section-new">
           <div class="inner-container">
-            <h1>About Us</h1>
+            <h1>ABOUT US</h1>
+            <div class="bottom-about"></div>
             <p class="text">
               We are an international design practice dedicated to the creation
               of inspired spaces, houses, buildings, and master plans. We have
@@ -162,6 +167,8 @@
           <div class="row">
             <div class="col-lg-12 text-center services-title">
               <h1 class="text-uppercase title-text">Services Offers</h1>
+              <div class="bottom-line"></div>
+
               <p class="para">
                 There are many variations of passages of Lorem Ipsum available,
                 but the majority have suffered alteration in some form, by
@@ -361,6 +368,7 @@
             <h1 class="text-uppercase text-center title-project">
               Recently Done Project Quality Work
             </h1>
+            <div class="bottom-project"></div>
           </div>
 
           <div class="button-group">
@@ -541,6 +549,7 @@
                 <h1 class="text-uppercase test-title">
                   WHAT OUR CLIENTS ARE SAYING ABOUT US
                 </h1>
+                <div class="bottom-project"></div>
                 <p>
                   We work with you as a team to customise a transformation of
                   your workplace that is aligned with your vision, business
@@ -714,5 +723,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/main.js"></script>
+    <script src="./js/typewriter.js"></script>
   </body>
 </html>

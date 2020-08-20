@@ -8,8 +8,9 @@
 }
 
 .site-main .project-area .title-project {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 800;
+  letter-spacing: 0.15rem;
 }
 
 .site-main .project-area .button-group button {
@@ -50,6 +51,8 @@ button:hover,
   background-clip: text !important;
   transition: 0.3s ease-in;
 }
+
+//! Media Queries
 
 @media only screen and (max-width: 768px) {
   .button-group button {

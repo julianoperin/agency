@@ -121,3 +121,26 @@ $text-size: 1.1rem; // 300
     display: none !important;
   }
 }
+
+.bottom-about {
+  height: 3px;
+  width: 6rem;
+  background: #c0c0c0;
+  margin: 0 auto 1rem 1rem;
+}
+
+.bottom-line {
+  height: 3px;
+  width: 7rem;
+  background: #c0c0c0;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+.bottom-project {
+  height: 3px;
+  width: 7rem;
+  background: #c0c0c0;
+  display: block;
+  margin: 1.2rem auto 2rem auto;
+}

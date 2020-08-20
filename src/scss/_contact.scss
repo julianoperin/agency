@@ -17,7 +17,7 @@
     height: 600px;
     background: #fff;
     padding: 40px;
-    margin-top: 5.5rem !important;
+    margin-top: 9rem !important;
     display: block;
     margin: auto;
     position: relative;
@@ -27,8 +27,9 @@
   .contact-form-area h1 {
     text-align: center;
     padding-bottom: 2rem;
-    font-size: 2.5rem;
     font-weight: 800;
+    font-size: 2.2rem;
+    letter-spacing: 0.15rem;
   }
 
   .contact-form-area input[type="text"] {
@@ -93,6 +94,8 @@
     transform: translateY(-2px);
   }
 }
+
+//! Media Queries
 
 @media only screen and (max-width: 992px) {
   .contact-form-area {

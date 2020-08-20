@@ -76,8 +76,8 @@ TweenMax.from(".navbar", 1, {
 });
 
 TweenMax.from(".line span", 1.5, {
-  delay: 2,
-  y: 80,
+  delay: 2.5,
+  y: 150,
   ease: Expo.easeInOut,
   stagger: {
     amount: 0.4,
@@ -103,4 +103,3 @@ TweenMax.from(".scrolldown", 1, {
   y: 100,
   ease: Expo.easeInOut,
 });
-// End of Header

@@ -135,7 +135,7 @@ $(document).ready(function () {
     gallery: {
       enabled: true
     }
-  }); // Owl-carousel
+  }); //! Owl-carousel
 
   $(".site-main .about-area .owl-carousel").owlCarousel({
     loop: true,
@@ -149,21 +149,7 @@ $(document).ready(function () {
         items: 2
       }
     }
-  }); // sticky navigation menu
-  // let nav_offset_top = $(".header_area").height() + 50;
-  // function navbarFixed() {
-  //   if ($(".header_area").length) {
-  //     $(window).scroll(function () {
-  //       let scroll = $(window).scrollTop();
-  //       if (scroll >= nav_offset_top) {
-  //         $(".header_area .main-menu").addClass("navbar_fixed");
-  //       } else {
-  //         $(".header_area .main-menu").removeClass("navbar_fixed");
-  //       }
-  //     });
-  //   }
-  // }
-  // navbarFixed();
+  });
 }); //! Back to Top Btn
 
 var toTop = document.querySelector(".to-top");
@@ -173,7 +159,7 @@ window.addEventListener("scroll", function () {
   } else {
     toTop.classList.remove("active-scroll");
   }
-}); //! Overlay
+}); // Overlay
 
 TweenMax.to(".overlay", 2, {
   delay: 1.3,
@@ -190,7 +176,8 @@ TweenMax.to(".overlay h1", 2, {
   opacity: 0,
   y: -150,
   ease: Expo.easeIn
-}); //! End of Overlay
+}); // End of Overlay
+// Header
 
 TweenMax.from(".navbar", 1, {
   delay: 2.6,
@@ -222,7 +209,7 @@ TweenMax.from(".scrolldown", 1, {
   opacity: 0,
   y: 100,
   ease: Expo.easeInOut
-});
+}); // End of Header
 },{}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -251,7 +238,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55918" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63811" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

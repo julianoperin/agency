@@ -80,7 +80,7 @@ nav {
   transform: rotate(-90deg) !important;
   position: relative;
   left: -48%;
-  bottom: 5%; }
+  top: 10% !important; }
 
 .scrolldown::before {
   display: inline-block;
@@ -118,7 +118,7 @@ nav {
   width: 55%;
   float: right;
   background-color: #fdfdfd;
-  padding: 120px; }
+  padding: 90px; }
 
 .inner-container h1 {
   margin-bottom: 30px;
@@ -343,7 +343,11 @@ button:hover,
   min-height: 85vh !important; }
   .contact-area .contact-img {
     margin-top: 7rem;
-    height: 600px; }
+    height: 700px; }
+  .contact-area .contact-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
   .contact-area .contact-form-area {
     max-width: 500px !important;
     height: 600px;

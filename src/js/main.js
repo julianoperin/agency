@@ -20,8 +20,7 @@ $(document).ready(function () {
     gallery: { enabled: true },
   });
 
-  // Owl-carousel
-
+  //! Owl-carousel
   $(".site-main .about-area .owl-carousel").owlCarousel({
     loop: true,
     autoplay: true,
@@ -35,25 +34,6 @@ $(document).ready(function () {
       },
     },
   });
-
-  // sticky navigation menu
-
-  // let nav_offset_top = $(".header_area").height() + 50;
-
-  // function navbarFixed() {
-  //   if ($(".header_area").length) {
-  //     $(window).scroll(function () {
-  //       let scroll = $(window).scrollTop();
-  //       if (scroll >= nav_offset_top) {
-  //         $(".header_area .main-menu").addClass("navbar_fixed");
-  //       } else {
-  //         $(".header_area .main-menu").removeClass("navbar_fixed");
-  //       }
-  //     });
-  //   }
-  // }
-
-  // navbarFixed();
 });
 
 //! Back to Top Btn
@@ -66,7 +46,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
-//! Overlay
+// Overlay
 TweenMax.to(".overlay", 2, {
   delay: 1.3,
   top: "-100%",
@@ -85,9 +65,9 @@ TweenMax.to(".overlay h1", 2, {
   y: -150,
   ease: Expo.easeIn,
 });
+// End of Overlay
 
-//! End of Overlay
-
+// Header
 TweenMax.from(".navbar", 1, {
   delay: 2.6,
   opacity: 0,
@@ -123,3 +103,4 @@ TweenMax.from(".scrolldown", 1, {
   y: 100,
   ease: Expo.easeInOut,
 });
+// End of Header

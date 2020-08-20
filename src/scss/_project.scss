@@ -45,7 +45,7 @@ button:hover,
 .btn.active {
   outline: 0px !important;
   box-shadow: none !important;
-  background: #c0c0c0 !important;
+  background: #c4c4c4 !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   background-clip: text !important;
@@ -54,12 +54,18 @@ button:hover,
 
 //! Media Queries
 
+@media only screen and (max-width: 992px) {
+  .site-main .project-area .button-group button {
+    font: normal 500 17px/2rem "Cormorant Garamond";
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .button-group button {
     padding: 0 5px !important;
   }
   .site-main .project-area .button-group button {
-    font: normal 500 15px/3.5rem "Cormorant Garamond";
+    font: normal 500 15px/2rem "Cormorant Garamond";
   }
 }
 
@@ -70,7 +76,7 @@ button:hover,
   }
 
   .site-main .project-area .button-group button {
-    font: normal 300 13px/2.5rem "Cormorant Garamond" !important;
-    padding: 0 0 5px 0 !important;
+    font: normal 300 14px/2rem "Cormorant Garamond" !important;
+    padding: 0 5px 5px 0 !important;
   }
 }

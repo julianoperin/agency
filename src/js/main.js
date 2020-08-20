@@ -50,7 +50,7 @@ window.addEventListener("scroll", () => {
 //! Overlay
 TweenMax.to(".overlay", 2, {
   delay: 1.3,
-  top: "-100%",
+  top: "-140%",
   ease: Expo.easeInOut,
 });
 

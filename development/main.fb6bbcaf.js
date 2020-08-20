@@ -164,7 +164,7 @@ window.addEventListener("scroll", function () {
 
 TweenMax.to(".overlay", 2, {
   delay: 1.3,
-  top: "-100%",
+  top: "-140%",
   ease: Expo.easeInOut
 });
 TweenMax.to(".overlay span", 2, {
@@ -238,7 +238,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53060" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55370" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -45,6 +45,10 @@
   font-weight: 300;
 }
 
+.ease {
+  transition: 0.3s ease;
+}
+
 .accord-bg {
   background: rgba(248, 252, 253, 0.9) !important;
   font-size: 1rem;

@@ -105,27 +105,11 @@ TweenMax.from(".scrolldown", 1, {
   ease: Expo.easeInOut,
 });
 
-// arrowUp.addEventListener("click", toggleArrow);
-
-// const arrowUp = document.querySelectorAll("toggleArrow").forEach((item) => {
-//   item.addEventListener("click", (event) => {
-//     event.classList.toggle("accord-arrow-active");
-//   });
-// });
-
-// const arrowUp = document.querySelectorAll("toggleArrow");
-
-// arrowUp.forEach((button) => {
-//   button.addEventListener("click", (a) => {
-//     // get the button value
-//     a.classList.add("accord-arrow-active");
-//   });
-// });
-
+//! Accordion btn functionality
 const arrowUp = document.querySelectorAll(".accord-arrow");
 
 arrowUp.forEach((link) => {
-  link.addEventListener("click", (e) => {
+  link.addEventListener("click", () => {
     link.classList.toggle("accord-arrow-active");
   });
 });

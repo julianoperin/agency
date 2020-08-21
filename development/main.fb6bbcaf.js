@@ -212,23 +212,11 @@ TweenMax.from(".scrolldown", 1, {
   opacity: 0,
   y: 100,
   ease: Expo.easeInOut
-}); // arrowUp.addEventListener("click", toggleArrow);
-// const arrowUp = document.querySelectorAll("toggleArrow").forEach((item) => {
-//   item.addEventListener("click", (event) => {
-//     event.classList.toggle("accord-arrow-active");
-//   });
-// });
-// const arrowUp = document.querySelectorAll("toggleArrow");
-// arrowUp.forEach((button) => {
-//   button.addEventListener("click", (a) => {
-//     // get the button value
-//     a.classList.add("accord-arrow-active");
-//   });
-// });
+}); //! Accordion btn functionality
 
 var arrowUp = document.querySelectorAll(".accord-arrow");
 arrowUp.forEach(function (link) {
-  link.addEventListener("click", function (e) {
+  link.addEventListener("click", function () {
     link.classList.toggle("accord-arrow-active");
   });
 });
@@ -260,7 +248,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55266" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63881" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

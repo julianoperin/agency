@@ -1,5 +1,6 @@
 //! Filter Projects
-$(document).ready(function () {
+window.addEventListener("load", projectFilter);
+function projectFilter() {
   let $btns = $(".project-area .button-group button");
 
   $btns.click(function (e) {
@@ -35,7 +36,7 @@ $(document).ready(function () {
       },
     },
   });
-});
+}
 
 //! Back to Top Btn
 const toTop = document.querySelector(".to-top");
@@ -102,4 +103,29 @@ TweenMax.from(".scrolldown", 1, {
   opacity: 0,
   y: 100,
   ease: Expo.easeInOut,
+});
+
+// arrowUp.addEventListener("click", toggleArrow);
+
+// const arrowUp = document.querySelectorAll("toggleArrow").forEach((item) => {
+//   item.addEventListener("click", (event) => {
+//     event.classList.toggle("accord-arrow-active");
+//   });
+// });
+
+// const arrowUp = document.querySelectorAll("toggleArrow");
+
+// arrowUp.forEach((button) => {
+//   button.addEventListener("click", (a) => {
+//     // get the button value
+//     a.classList.add("accord-arrow-active");
+//   });
+// });
+
+const arrowUp = document.querySelectorAll(".accord-arrow");
+
+arrowUp.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    link.classList.toggle("accord-arrow-active");
+  });
 });

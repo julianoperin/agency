@@ -661,5 +661,8 @@ body {
   display: block;
   margin: 1.2rem auto 2rem auto; }
 
+.accord-arrow-active {
+  transform: rotate(180deg); }
+
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */

@@ -1,5 +1,6 @@
 //! Filter Projects
 window.addEventListener("load", projectFilter);
+
 function projectFilter() {
   let $btns = $(".project-area .button-group button");
 
@@ -113,3 +114,10 @@ arrowUp.forEach((link) => {
     link.classList.toggle("accord-arrow-active");
   });
 });
+
+//! DATE
+const date = document.getElementById("date-now");
+
+date.innerHTML = new Date().getFullYear().toString();
+
+console.log(daCurrentDate);
